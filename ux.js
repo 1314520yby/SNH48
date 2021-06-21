@@ -14,13 +14,13 @@
 ***************************************************/
 
 //tips
-$('.tips>b').on('mouseover', function(){
-	var html = $(this).siblings('.tips-detail').html(),
+$('.tips').on('mouseover', function(){
+	var html = $(this).find('.tips-detail').html(),
 		_tips;
 	
 	//弹出定位
 	if($(window).width() > 768){
-		_tips = '2';
+		_tips = '4';
 	}else{
 		_tips = '1';
 	}
